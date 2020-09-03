@@ -1,0 +1,30 @@
+<h5 class="text-center" style="margin-top: 25px; margin-bottom: 25px;"></h5>
+<div class="col-12">
+    <div class="card-deck chs_teamgrid">
+        <div class="">
+            <div class="card-body text-center">
+                <span class="card-title" style="color: white;">{{country.name}}</span>
+            </div>
+            <div class="card-footer">
+                <p class="card-text">
+                    <b style="margin-right: 62px;">Capital</b> {{country.capital}}
+                </p>
+                <p class="card-text">
+                    <b style="margin-right: 80px;">Area</b> {{country.area | number : 0}}
+                </p>
+                <p class="card-text">
+                    <b style="margin-right: 32px;">Population</b> {{country.population | number : 0}}
+                </p>
+                <p class="card-text">
+                    <b style="margin-right: 80px;">GDP</b> {{country.gdp | number : 0}}
+                </p>
+                <p class="card-text">
+                    <b style="margin-right: 49px;">Currency</b> {{country.currency}}
+                </p>
+                <button (click)="goBack()" class=" btn btn-primary waves-effect waves-light ">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
